@@ -1,0 +1,29 @@
+form {
+    label {
+        display: block;
+        font-size: 18px;
+        font-family: 'source_sans_probold';
+    }
+
+    input[type="text"] {
+        padding: 6px;
+        background-color: #ccc;
+        color: #777;
+
+        font-size: 14px;
+
+        border: 1px solid #bbb;
+
+        @include transition($formTransition);
+
+        &:hover {
+            background-color: #ddd;
+            color: #444;
+        }
+
+        &:focus {
+            background-color: #eee;
+            color: #222;
+        }
+    }
+}

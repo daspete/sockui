@@ -1,0 +1,65 @@
+.overlay-wrapper {
+	position: absolute;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.overlay {
+	position: absolute;
+	width: $overlayWidth;
+	height: $overlayHeight;
+	overflow: hidden;
+	background-color: $overlayBackgroundColor;
+	top: 50%;
+	left: 50%;
+	margin-left: -($overlayWidth / 2);
+	margin-top: -($overlayHeight  / 2);
+	@include box-shadow($overlayShadow);
+}
+
+.headline {
+	padding: $overlayPadding;
+	color: overlayHeadlineFontColor;
+	background-color: $overlayHeadlineBackgroundColor;
+}
+
+.content {
+	padding: $overlayPadding;
+	text-align: center;
+}
+
+.button-container {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 45px;
+	text-align: center;
+
+	background-color: $overlayHeadlineBackgroundColor;
+	padding: $overlayPadding;
+	color: overlayHeadlineFontColor;
+}
+
+.close-overlay {
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	width: 26px;
+	height: 26px;
+	padding-left: 3px;
+	border-radius: 12px;
+	cursor: pointer;
+	font-size: 24px;
+	color: $overlayFontColor;
+	background-color: $overlayBackgroundColor;
+
+	&:hover {
+		color: $overlayBackgroundColor;
+		background-color: $overlayFontColor;
+	}
+}

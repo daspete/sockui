@@ -1,0 +1,31 @@
+.btn {
+    display: inline-block;
+    padding: 5px 11px;
+
+    color: #888;
+    background-color: #333;
+
+    font-size: 14px;
+    font-family: 'source_sans_probold';
+
+    border: none;
+
+    cursor: pointer;
+
+    @include transition($formTransition);
+
+    &:hover {
+        color: #aaa;
+        background-color: #777;
+    }
+}
+
+.btn-green {
+    background-color: #370;
+    color: #4a0;
+
+    &:hover {
+        background-color: #590;
+        color: #6c0;
+    }
+}

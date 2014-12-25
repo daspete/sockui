@@ -1,0 +1,56 @@
+$primaryFontRegular: 'source_sans_proregular';
+$primaryFontSizeNormal: 16px;
+
+$boxShadow: 0 1px 5px #000;
+$textShadow: 0 1px #000;
+
+
+/*////////////////////////////////////////////////////
+TOP NAVIGATION
+//////////////////////////////////////////////////*/
+$topNavigationFontSize: 16px;
+$topNavigationOffset: 26px;
+$topNavigationSubWidth: 150px;
+
+$topNavigationBackgroundColorTop: #222;
+$topNavigationBackgroundColorBottom: #444;
+$topNavigationBackgroundColorHover: #666;
+
+$topNavigationBorderColor: #222;
+
+$topNavigationFontColorNormal: #fff;
+$topNavigationFontColorHover: #fff;
+
+$topNavigationTransition: opacity 0.15s ease-in;
+
+
+/*////////////////////////////////////////////////////
+STAGE
+//////////////////////////////////////////////////*/
+$sidebarWidth: 300px;
+$sidebarOffset: 20px;
+$sidebarBackgroundColor: #333;
+
+$timelineHeight: 350px;
+$timelineOffset: 20px;
+$timelineBackgroundColor: #555;
+
+$slideTransition: all 0.3s ease-in-out;
+
+
+/*////////////////////////////////////////////////////
+OVERLAY
+//////////////////////////////////////////////////*/
+$overlayWidth: 450px;
+$overlayHeight: 280px;
+$overlayPadding: 7px;
+
+$overlayShadow: 0 0 30px rgba(0,0,0,0.7);
+
+$overlayBackgroundColor: #fff;
+$overlayFontColor: #555;
+
+$overlayHeadlineBackgroundColor: #dedede;
+$overlayHeadlineFontColor: #555;
+
+$formTransition: all 0.4s ease-in;

@@ -1,0 +1,147 @@
+.stage {
+	position: absolute;
+	z-index: 50;
+
+	top: $topNavigationOffset;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	overflow: hidden;
+
+	background-color: #000;
+	background-image: image-url('preloader.gif');
+	background-position: center center;
+	background-repeat: no-repeat;
+
+	.left-working-pane {
+		position: absolute;
+		z-index: 55;
+		top: 0;
+		left: -($sidebarWidth - $sidebarOffset);
+		bottom: 0;
+
+		width: $sidebarWidth;
+		max-width: 90%;
+
+		background-color: $sidebarBackgroundColor;
+
+		@include transition($slideTransition);
+		@include box-shadow($boxShadow);
+
+		&:hover {
+			left: 0;
+		}
+
+		.description {
+			position: absolute;
+			top: 62px;
+			right: -55px;
+			color: #fff;
+			@include transform(rotate(90deg));
+			@include text-shadow($textShadow);
+		}
+
+		.content {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 22px;
+			bottom: 0;
+
+			background-color: #fff;
+		}
+	}
+
+	.working-pane {
+		position: absolute;
+		z-index: 54;
+		top: 0;
+		left: $sidebarOffset;
+		right: $sidebarOffset;
+		bottom: 0;
+
+		.canvas {
+			position: absolute;
+			z-index: 54;
+			top: 0;
+			left: 0;
+			bottom: $timelineOffset;
+			right: 0;
+		}
+
+		.timeline {
+			position: absolute;
+			z-index: 55;
+			left: 0;
+			right: 0;
+			bottom: -($timelineHeight - $timelineOffset);
+			height: $timelineHeight;
+			max-height: 90%;
+			background-color: $timelineBackgroundColor;
+
+			@include transition($slideTransition);
+
+			&:hover {
+				bottom: 0;
+			}
+
+			.description {
+				padding-top: 3px;
+				color: #fff;
+				text-align: center;
+				@include text-shadow($textShadow);
+			}
+
+			.content {
+				position: absolute;
+				top: 22px;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background-color: #fff;
+			}
+		}
+	}
+
+	.right-working-pane {
+		position: absolute;
+		z-index: 55;
+		top: 0;
+		right: -($sidebarWidth - $sidebarOffset);
+		//right: 0;
+		bottom: 0;
+
+		width: $sidebarWidth;
+		max-width: 90%;
+
+		background-color: $sidebarBackgroundColor;
+
+		@include transition($slideTransition);
+		@include box-shadow($boxShadow);
+
+		&:hover {
+			right: 0;
+		}
+
+		.description {
+			position: absolute;
+			top: 52px;
+			left: -45px;
+			color: #fff;
+			@include transform(rotate(-90deg));
+			@include text-shadow($textShadow);
+		}
+
+		.content {
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 22px;
+			bottom: 0;
+
+			background-color: #fff;
+		}
+	}
+
+}

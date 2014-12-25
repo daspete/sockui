@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SockUI</title>
+
+	<link rel="stylesheet" href="assets/fonts/sourcesanspro/stylesheet.css">
+	<link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<script data-main="js/app/initializeApplication" src="vendor/requirejs/require.js"></script>
+
+</head>
+<body>
+	<ul class="top-navigation">
+		<li>
+			<a href="#">File</a>
+			<ul>
+				<li><a data-action="new" href="#">New</a></li>
+				<li><a data-action="open" href="#">Open</a></li>
+				<li><a data-action="save" href="#">Save</a></li>
+				<li><a data-action="saveas" href="#">Save as</a></li>
+			</ul>
+		</li>
+	</ul>
+
+	<div class="stage">
+		<div class="left-working-pane">
+			<div class="description">LAYERS & SETTINGS</div>
+			<div class="content"></div>
+		</div>
+		<div class="working-pane">
+			<div class="canvas"></div>
+			<div class="timeline">
+				<div class="description">TIMELINE</div>
+				<div class="content"></div>
+			</div>
+		</div>
+		<div class="right-working-pane">
+			<div class="description">ASSETS & TOOLS</div>
+			<div class="content"></div>
+		</div>
+	</div>
+</body>
+</html>
